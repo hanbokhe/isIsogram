@@ -3,6 +3,7 @@
 // FUNCTION DEFINITION(S)
 function isIsogram(text) {
   // add each char to a set
+  text = text.toLowerCase();
   const charCount = new Set();
   for (var i = 0; i<text.length; i++){
       if(charCount.has(text[i])){
